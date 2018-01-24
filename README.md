@@ -7,7 +7,7 @@ First, you need to get a directions API key at [developers.google.com/maps/docum
 
 It's free as long as you make under 2500 requests/day.
 
-Then you're gonna need `ngrok`, if you're on OSX and have `homebrew` installed you can just do `brew install ngrok` otherwise you can download it from [https://ngrok.com/](https://ngrok.com/)
+Then you're gonna need `ngrok`, if you're on OSX and have `homebrew` installed you can just do `brew cask install ngrok` otherwise you can download it from [https://ngrok.com/](https://ngrok.com/)
 
 The next tool you need is [Postman](https://www.getpostman.com/). This tool is used to test APIs.
 
