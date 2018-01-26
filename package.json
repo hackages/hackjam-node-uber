@@ -1,0 +1,44 @@
+{
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote --bracket-spacing=false",
+      "eslint --max-warnings 1",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "format": "prettier --single-quote --bracket-spacing=false --write 'src/**/*.js'",
+    "precommit": "lint-staged",
+    "prebuild": "rm -r build || true",
+    "build": "babel src --copy-files --out-dir build",
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^4.8.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.3",
+    "nodemon": "^1.12.1",
+    "prettier": "^1.7.4"
+  },
+  "dependencies": {
+    "@google/maps": "^0.4.3",
+    "@mapbox/polyline": "^0.2.0",
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "boom": "^6.0.0",
+    "express": "^4.16.2",
+    "geolib": "^2.0.23",
+    "joi": "^11.1.1",
+    "lodash": "^4.17.4",
+    "redux": "^3.7.2",
+    "reselect": "^3.0.1",
+    "socket.io": "^2.0.3",
+    "uuid": "^3.1.0"
+  }
+}
