@@ -74,7 +74,7 @@ Examine the Response you get when you successfuly POST to /cars using Postman, y
 
 
 ### Middlewares
-Now that you now what routes are and that you used a pre written middleware let's write one ourselves 👍
+Now that you know what routes are and that you used a pre written middleware let's write one ourselves 👍
 
 Open `src/middlewares/authMiddleware.js` and find instructions there on how to write that one.
 
